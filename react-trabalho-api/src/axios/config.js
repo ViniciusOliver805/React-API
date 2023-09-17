@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const productFetch = axios.create({
-    baseURL: "https://dummyjson.com"
+    baseURL: "http://localhost:3001"
 })
 
 export default productFetch

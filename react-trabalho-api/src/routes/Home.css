@@ -12,6 +12,10 @@
     border-bottom: 1px solid #777;
 }
 
+.product h2 {
+    color: #bbb5b5;
+}
+
 .product h2, .product p {
     margin-bottom: 1rem;
 }

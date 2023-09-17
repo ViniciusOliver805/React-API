@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  # db-postgres:
+  #   image: postgres:alpine
+  #   ports:
+  #     - "5433:5432"
+  #   container_name: "dummyJson_BD"
+  #   restart: always
+  #   volumes:
+  #     - ./backend/dummyJson_BD:/var/lib/postgresql/data
+  #   environment:
+  #     POSTGRES_USER: pguser
+  #     POSTGRES_PASSWORD: pg
+
+  db-mysql:
+    image: mysql:latest
+    ports:
+      - "3307:3306"
+    container_name: "dummyjson_bd_mysql"
+    restart: always
+    volumes:
+      - ./backend/dummyjson_bd_mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dummyjson_db_database    
+
+volumes:
+  # dummyJson_BD:
+  dummyjson_bd_mysql:

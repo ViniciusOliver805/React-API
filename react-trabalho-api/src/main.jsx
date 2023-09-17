@@ -8,11 +8,16 @@ import { createBrowserRouter, RouterProvider, Router, } from 'react-router-dom';
 //Paginas
 import Home from "./routes/Home";
 import NewProduct from "./routes/NewProduct";
+import Login from "./routes/Login";
 
 const router = createBrowserRouter([
   { 
     element: <App />,
     children: [
+      {
+        path: "/login",
+        element: <Login />,
+      },
       {
         path: "/",
         element: <Home />,
